@@ -1,0 +1,141 @@
+     /* Header/navbar */
+.heasder1{
+    width: 100%;
+    
+}
+
+.navbar{
+    background-color:rgb(27, 27, 77);
+}
+.ezeesol-school{
+    color: white;
+    font-weight: bold;
+}
+
+::placeholder{
+    font-size: 13px;
+    opacity: 0.1;
+    font-weight: bold;
+    word-spacing: -1px;
+    
+    
+    
+}
+.asd{
+    width: 120%;
+}
+.circle{
+    border:3px solid white;
+    border-radius: 50%;
+    background-color: orange;
+    width: 45px;
+    height: 45px;
+}
+.fass{
+    width: 100%;
+    font: bold;
+
+}
+
+.form-inline{
+    border-radius: 12px 5px 5px 5px;
+}
+
+
+.left{
+    color: white;
+    font-weight: bold;
+}
+#navbarDropdown{
+    color: white;
+}
+
+   /* sidebar */
+
+   .logo{
+       width: 140px;
+       height: 140px;
+       background-color: white;
+       border-radius: 100%;
+       border: 5px solid orange;
+
+   }
+   
+
+   .sidebar{
+       
+       width:100%;
+       background-color: rgb(27, 27, 77);
+       border-bottom: 1px solid white;
+       font-weight: bold;
+       height: 45px;
+   }
+   
+.sidebars{
+    padding-top: 120px;
+   }
+   
+#dropdownMenuButton{
+    width: 49%;
+    height: 50px;
+    
+    background-color: rgb(27, 27, 77);
+}
+
+.headingbox{
+    border: 1px solid rgb(53, 52, 52);
+    font-weight: 600;
+    color: rgb(110, 103, 103);
+    width:97%;
+    
+}
+
+.gbutton{
+    border: 1px solid;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 900;
+    border: none;
+    width: 12.1%;
+    
+}
+
+/* cards */
+
+.cards{
+    border: 1px solid black;
+
+}
+.cards-body{
+    height: 100px;
+}
+.cards_img{
+    width: 42px;
+    display: block;
+    border-radius: 50%;
+    border: 1px solid orange;
+}
+.card-writing{
+    font-weight: bold; 
+    font-size: 14px;
+}
+.cardl-writing{
+    font-weight: bold;
+    font-size: 12px;
+}
+.cardz-writing{
+    font-weight: bold;
+    font-size: 10px;
+}
+.cardbtnn{
+    font-weight: 900;
+    font-size: 8px;
+    border-radius: 20px;
+    height: 20px;
+  
+}
+
+    
+
+
+    

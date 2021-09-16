@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="ezeesol.css">
+    <link rel="stylesheet" href="media_query.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid pt-3">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2">
+
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-10">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <i class="fas fa fa-bars bg-white" aria-hidden="false"></i>
+
+                        <span class="ezeesol-school pl-1">(Ezeesol School System)</span>
+
+                        <button class="navbar-toggler bg-light" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto">
+                                <form class="form-inline my-2 my-lg-0">
+                                    <input class="form-control mr-sm-2 " type="search" id="placehoder"
+                                        placeholder="Search Student with | Name |Cell No | Roll No | Adm"
+                                        aria-label="Search" class="asd">
+
+                                </form>
+                                <span class="left pt-1">Left : (100 SMS)</span>
+
+
+                            </ul>
+                            <div class="circle"></div>
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    AlRaees
+                                </a>
+                                <div class="dropdown" aria-labelledby="navbarDropdown">
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="container-fluid pt-3">
+
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2 sidebars">
+                <div class="sidebar">
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-cloud"
+                                aria-hidden="true"></i>
+                            Dashboard
+                        </a>
+                        <div class="dropdown" aria-labelledby="navbarDropdown">
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-cloud"
+                                aria-hidden="true"></i>
+                            Students
+                        </a>
+                        <div class="dropdown" aria-labelledby="navbarDropdown">
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-cloud"
+                                aria-hidden="true"></i>
+                            Attendance
+                        </a>
+                        <div class="dropdown" aria-labelledby="navbarDropdown">
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-cloud"
+                                aria-hidden="true"></i>
+                            SMS/Emails
+                        </a>
+                        <div class="dropdown" aria-labelledby="navbarDropdown">
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-cloud"
+                                aria-hidden="true"></i>
+                            Fee Collection
+                        </a>
+                        <div class="dropdown" aria-labelledby="navbarDropdown">
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-cloud"
+                                aria-hidden="true"></i>
+                            Exam
+                        </a>
+                        <div class="dropdown" aria-labelledby="navbarDropdown">
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-cloud"
+                                aria-hidden="true"></i>
+                            Accounts
+                        </a>
+                        <div class="dropdown" aria-labelledby="navbarDropdown">
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-cloud"
+                                aria-hidden="true"></i>
+                            Timetable
+                        </a>
+                        <div class="dropdown" aria-labelledby="navbarDropdown">
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-cloud"
+                                aria-hidden="true"></i>
+                            Employe/HRM
+                        </a>
+                        <div class="dropdown" aria-labelledby="navbarDropdown">
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-cloud"
+                                aria-hidden="true"></i>
+                            Datesheet
+                        </a>
+                        <div class="dropdown" aria-labelledby="navbarDropdown">
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-cloud"
+                                aria-hidden="true"></i>
+                            Reports
+                        </a>
+                        <div class="dropdown" aria-labelledby="navbarDropdown">
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-cloud"
+                                aria-hidden="true"></i>
+                            LMS OnlineTest
+                        </a>
+                        <div class="dropdown" aria-labelledby="navbarDropdown">
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-cloud"
+                                aria-hidden="true"></i>
+                            PayRoll
+                        </a>
+                        <div class="dropdown" aria-labelledby="navbarDropdown">
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-cloud"
+                                aria-hidden="true"></i>
+                            Staff Portal
+                        </a>
+                        <div class="dropdown" aria-labelledby="navbarDropdown">
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-cloud"
+                                aria-hidden="true"></i>
+                            NULL
+                        </a>
+                        <div class="dropdown" aria-labelledby="navbarDropdown">
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-cloud"
+                                aria-hidden="true"></i>
+                            NULL
+                        </a>
+                        <div class="dropdown" aria-labelledby="navbarDropdown">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10 col-md-10 col-sm-10">
+                <p class=" headingbox text-center p-2 mx-auto">Important Notification for all the software users...
+                    <a href="#"> Read More </a> Some New updates are done.<a href="#"> Read More</a>
+                </p>
+                <div class="container-fluid">
+                    <div class=" btnr row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+
+
+                            <div class="py-2">
+                               
+                                <button type="button" class="gbutton btn btn-primary btn-lg">Adm & Attendance</button>
+                                <button type="button" class="gbutton btn btn-info btn-lg">Students Report</button>
+                                <button type="button" class="gbutton btn btn-primary btn-lg">Mark Attendance</button>
+                                <button type="button" class="gbutton btn btn-success btn-lg">Marks Reports</button>
+                                <button type="button" class="gbutton btn btn-info btn-lg">View Challan</button>
+                                <button type="button" class="gbutton btn btn-warning btn-lg " style="color: azure;">New Eng SMS</button>
+                               
+                                <button type="button" class="gbutton btn btn-danger btn-lg">New Urdu SMS</button>
+                                <button type="button" class="gbutton btn btn-primary btn-lg ">View Sent SMS</button>
+                            </div>
+                            <div class="py-1">
+                                <button type="button" class="gbutton btn btn-danger btn-lg">Emp Attendance</button>
+                                <button type="button" class="gbutton btn btn-dark btn-lg">Create Parents IDs</button>
+                                <button type="button" class="gbutton btn btn-warning btn-lg" style="color:white;">Daily Clos Report</button>
+                                <button type="button" class="gbutton btn btn-dark btn-lg">(Feb) Close Report</button>
+                                <button type="button" class="gbutton btn btn-danger btn-lg">Add Marks Sheet</button>
+                                <button type="button" class="gbutton btn btn-info btn-lg">Fee Reports</button>
+                                <button type="button" class="gbutton btn btn-success btn-lg ">Add Students</button>
+                                <button type="button" class="gbutton btn btn-info btn-lg ">View Parents IDs</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <div class=" cards card">
+                                <div class=" cards-body card-body">
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-md-5 col-sm-5">
+                                            <img src="logo.png" alt="" class="cards_img">
+                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-7">
+                                            <div class="writingcart">
+                                                <div class=" card-writing text-right"> Expected Fee (Feb) </div>
+                                                <p class="card-writing text-right">1,36,800.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class=" cards card my-4">
+                                <div class=" cards-body card-body">
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-md-5 col-sm-5">
+                                            <img src="logo.png" alt="" class="cards_img">
+                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-7">
+                                            <div class="writingcart">
+                                                <div class=" card-writing text-right"> Students Present </div>
+                                                <p class="card-writing text-right">108</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class=" cards card my-4">
+                                <div class=" cards-body card-body">
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-md-5 col-sm-5">
+                                            <img src="logo.png" alt="" class="cards_img">
+                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-7">
+                                            <div class="writingcart">
+                                                <div class=" card-writing text-right"> Total Students </div>
+                                                <p class="card-writing text-right">483</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class=" cards card my-4">
+                                <div class=" cards-body card-body">
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-md-5 col-sm-5">
+                                            <img src="logo.png" alt="" class="cards_img">
+                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-7">
+                                            <div class="writingcart">
+                                                <div class="writingcart">
+                                                    <div class=" card-writing text-right">Profit (Feb) </div>
+                                                    <p class="card-writing text-right">91,700.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class=" cards card my-4">
+                                <div class=" cards-body card-body">
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-md-5 col-sm-5">
+                                            <img src="logo.png" alt="" class="cards_img">
+                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-7">
+                                            <div class="writingcart">
+
+                                                <div class=" card-writing text-right"> Today Present Staff </div>
+                                                <p class="card-writing text-right">4</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <div class=" cards card ">
+                                <div class=" cards-body card-body">
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-md-5 col-sm-5">
+                                            <img src="logo.png" alt="" class="cards_img">
+                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-7">
+                                            <div class="writingcart">
+                                                <div class=" card-writing text-right"> Expected Fee (Feb) </div>
+                                                <p class="cardz-writing text-right">96,600 (Paid Challan :14)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class=" cards card my-4">
+                                <div class=" cards-body card-body">
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-md-5 col-sm-5">
+                                            <img src="logo.png" alt="" class="cards_img">
+                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-7">
+                                            <div class="writingcart">
+                                                <div class=" card-writing text-right"> Expected Fee (Feb) </div>
+                                                <p class="card-writing text-right">28,600</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class=" cards card my-4">
+                                <div class=" cards-body card-body">
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-md-5 col-sm-5">
+                                            <img src="logo.png" alt="" class="cards_img">
+                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-7">
+                                            <div class="writingcart">
+                                                <div class=" card-writing text-right"> Expected Fee (Feb) </div>
+                                                <p class="card-writing text-right">13</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class=" cards card my-4">
+                                <div class=" cards-body card-body">
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-md-5 col-sm-5">
+                                            <img src="logo.png" alt="" class="cards_img">
+                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-7">
+                                            <div class="writingcart">
+                                                <div class=" card-writing text-right"> Expected Fee (Feb) </div>
+                                                <p class="cardz-writing text-right">(Tomorrow Birthdays 1)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class=" cards card my-4">
+                                <div class=" cards-body card-body">
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-md-5 col-sm-5">
+                                            <img src="logo.png" alt="" class="cards_img">
+                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-7">
+                                            <div class="writingcart">
+                                                <div class=" card-writing text-right"> Expected Fee (Feb) </div>
+                                                <p class="card-writing text-right">1</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <div class=" cards card ">
+                                <div class=" cards-body card-body">
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-md-5 col-sm-5">
+                                            <img src="logo.png" alt="" class="cards_img">
+                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-7">
+                                            <div class="writingcart">
+                                                <div class=" card-writing text-right"> Expected Fee (Feb) </div>
+                                                <p class="cardz-writing text-right">96,600 (Paid Challan :14)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class=" cards card my-4">
+                                <div class=" cards-body card-body">
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-md-5 col-sm-5">
+                                            <img src="logo.png" alt="" class="cards_img">
+                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-7">
+                                            <div class="writingcart">
+                                                <div class=" card-writing text-right"> Expected Fee (Feb) </div>
+                                                <p class="card-writing text-right">28,600</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class=" cards card my-4">
+                                <div class=" cards-body card-body">
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-md-5 col-sm-5">
+                                            <img src="logo.png" alt="" class="cards_img">
+                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-7">
+                                            <div class="writingcart">
+                                                <div class=" card-writing text-right"> Expected Fee (Feb) </div>
+                                                <p class="card-writing text-right">13</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class=" cards card my-4">
+                                <div class=" cards-body card-body">
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-md-5 col-sm-5">
+                                            <img src="logo.png" alt="" class="cards_img">
+                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-7">
+                                            <div class="writingcart">
+                                                <div class=" card-writing text-right"> Expected Fee (Feb) </div>
+                                                <p class="cardz-writing text-right">(Tomorrow Birthdays 1)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class=" cards card my-4">
+                                <div class=" cards-body card-body">
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-md-5 col-sm-5">
+                                            <img src="logo.png" alt="" class="cards_img">
+                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-7">
+                                            <div class="writingcart">
+                                                <div class=" card-writing text-right"> Expected Fee (Feb) </div>
+                                                <p class="card-writing text-right">1</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class=" cards card my-4">
+                                <div class=" cards-body card-body">
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-md-5 col-sm-5">
+                                            <img src="logo.png" alt="" class="cards_img">
+                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-7">
+                                            <div class="writingcart">
+                                                <div class=" cardl-writing text-right pt-1 "> (Feb) Fee Commitments (2)
+                                                </div>
+                                                <div class="text-right pt-2">
+                                                    <button type="button"
+                                                        class="cardbtnn btn btn-danger text-center">Show
+                                                        Commitments</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+    </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
